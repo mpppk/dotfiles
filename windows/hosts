@@ -1,0 +1,9 @@
+[windows]
+104.196.160.128
+
+[windows:vars]
+ansible_user=niboshiporipori
+ansible_password=your_password
+ansible_port=5986
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
