@@ -6,3 +6,5 @@
       state: present
     with_items:
     - git
+    - cmder
+    - docker-for-windows
