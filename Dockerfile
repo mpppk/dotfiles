@@ -8,4 +8,4 @@ RUN apt-get install -y ansible
 RUN apt-get install curl iputils-ping net-tools vim -y
 RUN curl -kL https://bootstrap.pypa.io/get-pip.py | python
 RUN pip install pywinrm
-COPY windows/hosts /etc/ansible/hosts
+COPY hosts /etc/ansible/hosts
