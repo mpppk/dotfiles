@@ -1,0 +1,6 @@
+- hosts: gce_ubuntu
+  user: yuki
+  tasks:
+    - name: "apt-get install git"
+      apt: pkg=git
+      become: yes
