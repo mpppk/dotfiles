@@ -1,8 +1,7 @@
- #!/bin/bash
+#!/usr/bin/fish
 
-set DOT_FILES .config/fish .config/fisherman
+set DOT_FILES .config/fish .gitconfig
 
 for file in $DOT_FILES
-do
-  ln -s $HOME/dotfiles/$file $HOME/$file
-done
+  ln -sf $HOME/dotfiles/$file $HOME/$file
+end
