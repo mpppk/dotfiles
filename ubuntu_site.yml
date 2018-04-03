@@ -3,8 +3,11 @@
   vars:
     username: yuki
     email: niboshiporipori@gmail.com
+    go_get:
+    - name: ghq
+      url: github.com/motemen/ghq
   roles:
-    - role: joshualund.golang
+    - role: fubarhouse.golang
       become: yes
   tasks:
     - name: "apt-get install git"
