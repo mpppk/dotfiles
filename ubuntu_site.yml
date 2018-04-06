@@ -6,6 +6,11 @@
     go_get:
     - name: ghq
       url: github.com/motemen/ghq
+    - name: fzf
+      url: github.com/junegunn/fzf
+    - name: hlb
+      url: github.com/mpppk/hlb
+
   roles:
     - role: fubarhouse.golang
       become: yes
@@ -49,3 +54,15 @@
       git:
         repo: 'https://github.com/mpppk/dotfiles.git'
         dest: dotfiles
+    - file:
+        path: "{{ ansible_env.HOME }}/.config/fish/config.fish"
+        state: touch
+    - lineinfile:
+        path: "{{ ansible_env.HOME }}/.config/fish/config.fish"
+        line: 'set -x GOROOT /usr/local/go'
+    - lineinfile:
+        path: "{{ ansible_env.HOME }}/.config/fish/config.fish"
+        line: 'set -x GOPATH {{ansible_env.USER}}/go'
+    - lineinfile:
+        path: "{{ ansible_env.HOME }}/.config/fish/config.fish"
+        line: 'set -x PATH {{ansible_env.HOME}}/go/bin $GOROOT/bin $PATH'
