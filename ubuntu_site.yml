@@ -54,5 +54,10 @@
       git:
         repo: 'https://github.com/mpppk/dotfiles.git'
         dest: dotfiles
+    - name: make the ghq directory
+      file:
+        path="{{ ansible_env.HOME }}/ghq"
+        state=directory
+        owner="{{ ansible_env.USER }}"
     - name: deploy.sh
       shell: "{{ansible_env.HOME}}/dotfiles/deploy.fish"
