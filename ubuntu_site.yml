@@ -61,3 +61,5 @@
         owner="{{ ansible_env.USER }}"
     - name: deploy.sh
       shell: "{{ansible_env.HOME}}/dotfiles/deploy.fish"
+    - name: install fisherman plugins
+      shell: "fish -c fisher"
