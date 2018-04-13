@@ -3,6 +3,7 @@
   vars:
     username: yuki
     email: niboshiporipori@gmail.com
+    GOPATH: "{{ansible_env.HOME}}/go"
     go_get:
     - name: ghq
       url: github.com/motemen/ghq
