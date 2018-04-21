@@ -2,11 +2,13 @@
 name_or_ip_address
 
 [windows:vars]
-ansible_user=niboshiporipori
+ansible_user=yuki
 ansible_port=5986
 ansible_connection=winrm
 ansible_winrm_server_cert_validation=ignore
 
 [gce_ubuntu]
-35.224.140.119 ansible_ssh_private_key_file=~/.ssh/google_compute_engine
+35.197.98.4 ansible_ssh_private_key_file=~/.ssh/google_compute_engine
 
+[wsl]
+localhost

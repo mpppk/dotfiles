@@ -1,4 +1,4 @@
-- hosts: gce_ubuntu
+- hosts: wsl
   user: yuki
   vars:
     username: yuki
