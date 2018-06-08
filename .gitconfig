@@ -1,8 +1,12 @@
 [user]
-	name = yuki
-	email = niboshiporipori@gmail.com
+    name = yuki
+    email = niboshiporipori@gmail.com
 [core]
-	editor = vim
+    editor = vim
 [ghq]
     root = ~/.ghq
-    root = ~/.go/src
+    root = ~/go/src
+[alias]
+    s = status --short
+    b = branch -a
+    f = fetch --prune
