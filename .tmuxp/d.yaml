@@ -1,0 +1,10 @@
+session_name: main 
+windows:
+- window_name: home 
+  layout: main-vertical
+  shell_command_before:
+    - cd ~/
+  panes:
+    - pwd
+    - pwd
+    - pwd
