@@ -1,5 +1,5 @@
 #!/usr/local/bin/fish
-set DOT_FILES .config/fish/functions .config/fish/config.fish .config/fish/fishfile .gitconfig .gitignore_global .tmux.conf .tmuxp/d.yaml .atom/package.yaml .cobra.yaml
+set DOT_FILES .config/fish/functions .config/fish/config.fish .config/fish/fishfile .gitconfig .gitignore_global .tmux.conf .tmuxp/d.yaml .atom/package.yaml .cobra.yaml .vimrc
 
 mkdir -p $HOME/.tmuxp
 mkdir -p $HOME/.config/fish
