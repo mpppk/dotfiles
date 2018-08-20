@@ -3,6 +3,7 @@
 	email = niboshiporipori@gmail.com
 [core]
     editor = vim
+    excludesfile = $HOME/.gitignore_global
 [ghq]
     root = ~/.ghq
     root = ~/go/src
