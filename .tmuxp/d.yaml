@@ -1,10 +1,13 @@
 session_name: main 
 windows:
-- window_name: home 
+- &window
+  window_name: dotfiles
   layout: main-vertical
-  shell_command_before:
-    - cd ~/
+  start_directory: $HOME/.ghq/github.com/mpppk/dotfiles
   panes:
+    - tig
     - pwd
     - pwd
-    - pwd
+- <<: *window
+  window_name: blog
+  start_directory: $HOME/.ghq/github.com/mpppk/mpppk.github.io
