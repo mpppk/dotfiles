@@ -1,8 +1,6 @@
  #!/bin/bash
 
 DOT_FILES=(
-    .tmuxp
-    .atom
     .config/fish/functions
     .config/fish/config.fish
     .config/fish/fishfile
@@ -15,5 +13,5 @@ DOT_FILES=(
 
  for file in ${DOT_FILES[@]}
  do
-     ln -sfv $HOME/workspace/$file $HOME/$file
+     ln -sfv $HOME/dotfiles/$file $HOME/$file
  done
