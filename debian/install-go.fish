@@ -2,8 +2,6 @@
 
 set GOTAR go1.13.5.linux-amd64.tar.gz
 
-sudo apt-get update
-sudo apt-get -y upgrade
 wget https://dl.google.com/go/go1.13.5.linux-amd64.tar.gz
 sudo tar -xvf $GOTAR -C /usr/local
 rm $GOTAR
