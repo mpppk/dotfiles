@@ -11,7 +11,8 @@ DOT_FILES=(
     .vimrc
 )
 
+ DOTPATH=$HOME/dotfiles
  for file in ${DOT_FILES[@]}
  do
-     ln -sfv $HOME/dotfiles/$file $HOME/$file
+     ln -sfv $DOTPATH/$file $HOME/$file
  done

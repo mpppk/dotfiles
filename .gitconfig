@@ -5,7 +5,7 @@
     editor = vim
     excludesfile = $HOME/.gitignore_global
 [ghq]
-    root = ~/.ghq
+    root = ~/ghq
     root = ~/go/src
 [alias]
     s = status --short
