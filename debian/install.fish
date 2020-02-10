@@ -2,7 +2,8 @@
 
 set DOTPATH $HOME/dotfiles
 
-fish $DOTPATH/install-and-exec-fisher.fish
+mkdir -p $HOME/.config/fish/functions
+curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
 source $HOME/.config/fish/config.fish
 fisher
 
