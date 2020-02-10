@@ -1,7 +1,6 @@
  #!/bin/bash
 
 DOT_FILES=(
-    .config/fish/functions
     .config/fish/config.fish
     .config/fish/fishfile
     .gitconfig
@@ -9,6 +8,7 @@ DOT_FILES=(
     .tmux.conf
     .cobra.yaml
     .vimrc
+    .bashrc
 )
 
  DOTPATH=$HOME/dotfiles
