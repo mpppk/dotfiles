@@ -13,4 +13,4 @@ jobs:
         ls -la
         ./debian/install.sh $DOTPATH
       env:
-        DOTPATH: $HOME/work/dotfiles/dotfiles
+        DOTPATH: $HOME
