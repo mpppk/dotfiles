@@ -9,7 +9,7 @@ DOTPATH=$1
 # install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew bundle --file $DOTPATH/Brewfile
+brew bundle
 
 $DOTPATH/install-go-tools.sh
 
