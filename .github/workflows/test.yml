@@ -10,6 +10,6 @@ jobs:
     - name: install
       run: |
         echo $HOME
-        ls -la
+        ls -la .config/fish
         pwd
         ./debian/install.sh $GITHUB_WORKSPACE
