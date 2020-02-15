@@ -6,9 +6,9 @@ if [ $# -ne 1 ]; then
 fi
 DOTPATH=$1
 
-bash $DOTPATH/debian/deploy-apt-sources.sh
+bash $DOTPATH/debian/deploy-apt-sources.sh $DOTPATH
 bash $DOTPATH/debian/install-apt-tools.sh
-bash $DOTPATH/deploy.sh
+bash $DOTPATH/deploy.sh $DOTPATH
 source $HOME/.bashrc
 
 # setup golang
