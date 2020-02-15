@@ -11,6 +11,5 @@ jobs:
       run: |
         echo $HOME
         ls -la
-        ./debian/install.sh $DOTPATH
-      env:
-        DOTPATH: $HOME
+        pwd
+        ./debian/install.sh $GITHUB_WORKSPACE
