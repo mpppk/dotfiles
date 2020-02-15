@@ -9,7 +9,12 @@ jobs:
     - uses: actions/checkout@v2
     - name: install
       run: |
-        echo $HOME
-        ls -la .config/fish
-        pwd
         ./debian/install.sh $GITHUB_WORKSPACE
+  mac:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: install
+      run: |
+        ./mac/install.sh $GITHUB_WORKSPACE
+
