@@ -10,3 +10,5 @@ jobs:
     - name: install
       run: |
         ./debian/install.sh
+      env:
+        DOTPATH: $HOME/dotfiles/dotfiles
