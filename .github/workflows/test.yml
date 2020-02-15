@@ -1,0 +1,15 @@
+name: dotfiles test
+
+on: [push]
+
+jobs:
+  ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: install
+      run: |
+        echo $HOME
+        ls -la .config/fish
+        pwd
+        ./debian/install.sh $GITHUB_WORKSPACE
