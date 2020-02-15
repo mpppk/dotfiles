@@ -1,0 +1,12 @@
+name: dotfiles test
+
+on: [push]
+
+jobs:
+  ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: install
+      run: |
+        ./debian/install.sh

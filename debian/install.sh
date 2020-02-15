@@ -15,4 +15,3 @@ bash $DOTPATH/install-go-tools.sh
 # setup fish
 mkdir -p $HOME/.config/fish
 fish $DOTPATH/debian/install.fish
-fish
