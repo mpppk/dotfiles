@@ -14,5 +14,5 @@ sudo apt-key add - < Release.key
 
 sudo apt-get install -y apt-transport-https
 sudo apt-get update
-sudo apt-get install -y git tig tmux yarn fish build-essential
+sudo apt-get install -y git tig vim tmux yarn fish build-essential
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
