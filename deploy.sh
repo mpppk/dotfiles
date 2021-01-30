@@ -8,7 +8,8 @@ DOTPATH=$1
 
 DOT_FILES=(
     .config/fish/config.fish
-    .config/fish/fishfile
+    .config/fish/fish_plugins
+    .config/fish/functions/fish_prompt.fish
     .gitconfig
     .gitignore_global
     .tmux.conf

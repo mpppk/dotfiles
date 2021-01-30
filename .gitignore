@@ -1,5 +1,4 @@
 .idea
 *.retry
-.config/
 Release.key
 .DS_Store
