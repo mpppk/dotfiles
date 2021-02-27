@@ -1,7 +1,6 @@
 #!/bin/bash
 
-GOTAR=go1.15.7.linux-amd64.tar.gz
-
-wget -nv https://dl.google.com/go/go1.15.7.linux-amd64.tar.gz
-sudo tar -xf $GOTAR -C /usr/local
+GOTAR=go1.16.linux-amd64.tar.gz
+curl -LO https://golang.org/dl/$GOTAR
+sudo tar -C /usr/local -xzf $GOTAR
 rm $GOTAR
