@@ -8,7 +8,9 @@ DOTPATH=$1
 
 bash $DOTPATH/debian/deploy-apt-sources.sh $DOTPATH
 bash $DOTPATH/debian/install-apt-tools.sh
-bash $DOTPATH/debian/install-snap-tools.sh
+if (type "snap" > /dev/null 2>&1); then
+  bash $DOTPATH/debian/install-snap-tools.sh
+fi
 bash $DOTPATH/deploy.sh $DOTPATH
 source $HOME/.bashrc
 
