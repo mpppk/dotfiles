@@ -13,8 +13,12 @@ bash $DOTPATH/deploy.sh $DOTPATH
 source $HOME/.bashrc
 
 # setup golang
-mkdir -p $HOME/go
-bash $DOTPATH/debian/install-go.sh
+if !(type "go" > /dev/null 2>&1); then
+  mkdir -p $HOME/go
+  bash $DOTPATH/debian/install-go.sh
+else
+  echo "go installation is skipped. (already installed)"
+fi
 bash $DOTPATH/install-go-tools.sh
 
 # setup fish
