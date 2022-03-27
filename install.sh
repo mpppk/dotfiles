@@ -1,2 +1,2 @@
 # for GitHub CodeSpaces
-./debian/install.sh ${DOTPATH:-$HOME/dotfiles}
+./debian/install.sh ${DOTPATH:-/workspaces/.codespaces/.persistedshare/dotfiles}
