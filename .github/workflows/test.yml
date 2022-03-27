@@ -6,14 +6,14 @@ jobs:
   ubuntu:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: install
       run: |
         ./debian/install.sh $GITHUB_WORKSPACE
   mac:
     runs-on: macos-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: install
       run: |
         ./mac/install.sh $GITHUB_WORKSPACE
