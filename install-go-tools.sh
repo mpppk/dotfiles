@@ -1,5 +1,5 @@
 #!/bin/bash
 
-go get -v github.com/motemen/ghq
-go get -v github.com/junegunn/fzf
-go get -v github.com/knqyf263/pet
+go install github.com/x-motemen/ghq@latest
+go install github.com/junegunn/fzf@latest
+go install github.com/knqyf263/pet@latest
